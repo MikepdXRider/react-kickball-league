@@ -11,7 +11,7 @@ it ('renders PlayerCard', () => {
      )
     const title = screen.getByText('Welcome to the kickball league!');
     // or...
-    // const playerName = screen.getByText(/welcome to the kickball league/i);
+    // const title = screen.getByText(/welcome to the kickball league/i);
     
 
     expect(title).toBeInTheDocument();
