@@ -21,7 +21,7 @@ export default function PlayerDetails() {
 
         getPlayerData();
         setIsLoading(false);
-    }, [])
+    }, [id])
 
 
     return (
