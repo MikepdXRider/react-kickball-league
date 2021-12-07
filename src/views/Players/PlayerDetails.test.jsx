@@ -12,8 +12,8 @@ it ('renders PlayerDetils', async () => {
         </Route>
     </MemoryRouter>
     )
-    const title = await screen.findByText(/Ben E. Jetts/i);
+    const playerName = await screen.findByText(/Ben E. Jetts/i);
 
-    expect(title).toBeInTheDocument();
+    expect(playerName).toBeInTheDocument();
     expect(container).toMatchSnapshot();
 })

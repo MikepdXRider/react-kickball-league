@@ -15,7 +15,6 @@ export default function PlayerDetails() {
         setIsLoading(true);
         async function getPlayerData() {
             const newPlayerDataObj = await getPlayerById(id);
-            console.log(newPlayerDataObj);
             setPlayerDataObj(newPlayerDataObj);
         }
 
