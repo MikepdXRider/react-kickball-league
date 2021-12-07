@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import { useParams } from 'react-router';
-import TeamCard from '../../components/TeamCard/TeamCard.jsx';
+import PlayersList from '../../components/PlayersList/PlayersList.jsx';
+import { getPlayers } from '../../services/players.jsx';
 import { getTeamById } from '../../services/teams.jsx';
 
 export default function TeamDetails() {
@@ -9,6 +10,7 @@ export default function TeamDetails() {
     // state
     const [teamDataObj, setTeamDataObj] = useState({})
     const [isLoading, setIsLoading] = useState(false);
+    const [playersDataArr, setPlayersDataArr] = useState([]);
 
 
     // useEffect did mount fetch 
@@ -19,7 +21,14 @@ export default function TeamDetails() {
             console.log('getTeamById fn returns: ', newTeamDataObj);
             setTeamDataObj(newTeamDataObj);
         }
+        
+        async function getPlayersData() {
+            const newPlayersDataArr = await getPlayers();
+            console.log('getPlayers fn returns: ', newPlayersDataArr);
+            setPlayersDataArr(newPlayersDataArr)
+        }
 
+        getPlayersData();
         getTeamData();
         setIsLoading(false);
     }, [id])
@@ -38,7 +47,7 @@ export default function TeamDetails() {
                         </article>
                     </section>
                     <section>
-                        
+                        <PlayersList playersDataArr={playersDataArr} />
                     </section>
                 </>
             }   

@@ -13,12 +13,14 @@ export default function TeamCard({teamDataObj}) {
             </article>
         </Link>
     )
-}
+};
 
-TeamCard.propType = {
-    city: PropTypes.string.isRequired,
-    created_at: PropTypes.string.isRequired,
-    id: PropTypes.number.isRequired,
-    name: PropTypes.string.isRequired,
-    state: PropTypes.string.isRequired
-}
+TeamCard.propTypes = {
+    teamDataObj: PropTypes.shape({
+        city: PropTypes.string.isRequired,
+        created_at: PropTypes.string.isRequired,
+        id: PropTypes.number.isRequired,
+        name: PropTypes.string.isRequired,
+        state: PropTypes.string.isRequired
+    })
+};
