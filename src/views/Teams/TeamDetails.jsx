@@ -37,6 +37,7 @@ export default function TeamDetails() {
                     <section>
                         {
                             //❗ ODD BEHAVIOR ❗
+                            // https://dev.to/samba_code/nested-ternary-statements-in-react-jsx-35kp
                             // replacing teamDataObj.players with teamDataObj.players[0] and attemtping to conditionally render an alternative text breaks the site 
                             // error reads 'TypeError: Cannot read properties of undefined (reading '0')'
                             // If the page is already rendered and you switch out the if conditional below it begins behaving as expected(rending 'No players to display') UNTIL refresh-then every team details page is broken again.

@@ -1,0 +1,17 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders PlayerCard 1`] = `
+<div>
+  <article>
+    <h3>
+      test-name
+    </h3>
+    <h6>
+      test-utc
+    </h6>
+    <h5>
+      Position: 
+    </h5>
+  </article>
+</div>
+`;
