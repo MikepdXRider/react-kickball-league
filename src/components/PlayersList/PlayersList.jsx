@@ -10,7 +10,7 @@ export default function PlayersList({playersDataArr}) {
             {
                 playersDataArr.map(playerDataObj => {
                     return (
-                        <Link to={`/player/${playerDataObj.id}`}>
+                        <Link to={`/players/${playerDataObj.id}`}>
                             <li key={playerDataObj.id}>
                                 <PlayerCard playerDataObj={playerDataObj} />
                             </li>

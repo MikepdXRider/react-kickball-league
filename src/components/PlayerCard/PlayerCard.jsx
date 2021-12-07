@@ -1,12 +1,12 @@
-import React from 'react'
-import PropTypes from 'prop-types'
+import React from 'react';
+import PropTypes from 'prop-types';
 
 export default function PlayerCard({playerDataObj}) {
     return (
             <article>
                 <h3>{playerDataObj.name}</h3>
                 <h6>{playerDataObj.created_at}</h6>
-                <h5>Position: {playerDataObj.positoin}</h5>
+                <h5>Position: {playerDataObj.position}</h5>
             </article>
     )
 }
