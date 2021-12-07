@@ -2,6 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import PlayerCard from '../PlayerCard/PlayerCard.jsx';
 
+
 export default function PlayersList({playersDataArr}) {
     return (
         <ul>

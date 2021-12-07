@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react'
+import { Link } from 'react-router-dom';
 import TeamCard from '../../components/TeamCard/TeamCard.jsx';
 import { getTeams } from '../../services/teams.jsx';
 
@@ -30,7 +31,9 @@ export default function TeamsList() {
                         {teamsDataArr.map(teamDataObj => {
                             return (
                                 <li key={teamDataObj.id}>
-                                    <TeamCard teamDataObj={teamDataObj}/>
+                                    <Link to={`/teams/${teamDataObj.id}`}>
+                                        <TeamCard teamDataObj={teamDataObj}/>
+                                    </Link>
                                 </li>
                             )
                         })}
