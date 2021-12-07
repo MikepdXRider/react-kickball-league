@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react'
+import TeamCard from '../../components/TeamCard/TeamCard.jsx';
 import { getTeams } from '../../services/teams.jsx';
 
 export default function TeamsList() {
@@ -26,15 +27,16 @@ export default function TeamsList() {
                 ? <h1>Loading...</h1> 
                 : <section>
                     <ul>
-                        {teamsDataArr.map(teamsDataObj => {
-                            return <li>
-                                {/* TeamCard here */}
-                            </li>
+                        {teamsDataArr.map(teamDataObj => {
+                            return (
+                                <li key={teamDataObj.id}>
+                                    <TeamCard teamDataObj={teamDataObj}/>
+                                </li>
+                            )
                         })}
                     </ul>
                 </section>
             }
-                {/* - Wrap each team in a link that directs the user to `/team${team.id}` */}
         </section>
     )
 }
