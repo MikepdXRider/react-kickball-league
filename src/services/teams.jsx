@@ -1,14 +1,14 @@
 import { client, parseData } from './client';
 
-export async function getPlayers() {
-  const request = await client.from('players').select().order('name');
+export async function getTeams() {
+  const request = await client.from('teams').select().order('name');
   return parseData(request);
 }
 
-export async function getPlayerById(id) {
+export async function getTeamById(id) {
   const request = await client
-    .from('players')
-    .select('*, teams (*)')
+    .from('teams')
+    .select('*, players (*)')
     .match({ id })
     .single();
   return parseData(request);
