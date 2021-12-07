@@ -11,9 +11,9 @@ export default function TeamsList() {
     useEffect(() => {
         setIsLoading(true);
         async function getTeamsData(){
-            const teamsDataArr = await getTeams();
-            console.log(teamsDataArr);
-            setTeamsDataArr(teamsDataArr);
+            const newTeamsDataArr = await getTeams();
+            console.log('getTeams fn returns :', newTeamsDataArr);
+            setTeamsDataArr(newTeamsDataArr);
         }
 
         getTeamsData();
@@ -21,7 +21,7 @@ export default function TeamsList() {
     }, [])
 
     return (
-        <section>
+        <main>
             {
                 isLoading 
                 ? <h1>Loading...</h1> 
@@ -37,6 +37,6 @@ export default function TeamsList() {
                     </ul>
                 </section>
             }
-        </section>
+        </main>
     )
 }

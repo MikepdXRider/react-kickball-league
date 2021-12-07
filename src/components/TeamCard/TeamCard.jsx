@@ -2,6 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types';
 import { Link } from 'react-router-dom';
 
+
 export default function TeamCard({teamDataObj}) {
     return (
         <Link to={`/team/${teamDataObj.id}`}>
@@ -13,7 +14,6 @@ export default function TeamCard({teamDataObj}) {
         </Link>
     )
 }
-
 
 TeamCard.propType = {
     city: PropTypes.string.isRequired,
