@@ -1,6 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import PlayerCard from '../PlayerCard/PlayerCard.jsx';
+import { Link } from 'react-router-dom';
 
 
 export default function PlayersList({playersDataArr}) {
@@ -9,9 +10,11 @@ export default function PlayersList({playersDataArr}) {
             {
                 playersDataArr.map(playerDataObj => {
                     return (
-                        <li key={playerDataObj.id}>
-                            <PlayerCard playerDataObj={playerDataObj} />
-                        </li>
+                        <Link to={`/player/${playerDataObj.id}`}>
+                            <li key={playerDataObj.id}>
+                                <PlayerCard playerDataObj={playerDataObj} />
+                            </li>
+                        </Link>
                     )
                 })
             }

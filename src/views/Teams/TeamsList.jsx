@@ -24,7 +24,7 @@ export default function TeamsList() {
     return (
         <main>
             {
-                isLoading 
+                isLoading
                 ? <h1>Loading...</h1> 
                 : <section>
                     <ul>
