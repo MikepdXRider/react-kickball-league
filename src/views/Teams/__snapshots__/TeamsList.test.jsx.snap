@@ -1,0 +1,126 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders TeamsList page 1`] = `
+<div>
+  <main>
+    <section>
+      <ul>
+        <li>
+          <a
+            href="/teams/10"
+          >
+            <article
+              style="border: 1px solid black;"
+            >
+              <h3>
+                Acme USA
+              </h3>
+              <h6>
+                2021-11-29T01:33:23.387367+00:00
+              </h6>
+              <h5>
+                Anytown, MN 
+              </h5>
+            </article>
+          </a>
+        </li>
+        <li>
+          <a
+            href="/teams/1"
+          >
+            <article
+              style="border: 1px solid black;"
+            >
+              <h3>
+                Bridge City Sneakers
+              </h3>
+              <h6>
+                2021-11-22T20:07:58+00:00
+              </h6>
+              <h5>
+                Portland, OR 
+              </h5>
+            </article>
+          </a>
+        </li>
+        <li>
+          <a
+            href="/teams/3"
+          >
+            <article
+              style="border: 1px solid black;"
+            >
+              <h3>
+                Lakeville Thunderfeet
+              </h3>
+              <h6>
+                2021-11-22T20:08:43+00:00
+              </h6>
+              <h5>
+                Lake Oswego, OR 
+              </h5>
+            </article>
+          </a>
+        </li>
+        <li>
+          <a
+            href="/teams/4"
+          >
+            <article
+              style="border: 1px solid black;"
+            >
+              <h3>
+                Mt. Hoodies
+              </h3>
+              <h6>
+                2021-11-22T20:10:16+00:00
+              </h6>
+              <h5>
+                Mt. Hood, OR 
+              </h5>
+            </article>
+          </a>
+        </li>
+        <li>
+          <a
+            href="/teams/2"
+          >
+            <article
+              style="border: 1px solid black;"
+            >
+              <h3>
+                Stumptown Lumberjacks
+              </h3>
+              <h6>
+                2021-11-22T20:08:18+00:00
+              </h6>
+              <h5>
+                Portland, OR 
+              </h5>
+            </article>
+          </a>
+        </li>
+        <li>
+          <a
+            href="/teams/5"
+          >
+            <article
+              style="border: 1px solid black;"
+            >
+              <h3>
+                Vancougers
+              </h3>
+              <h6>
+                2021-11-22T23:16:31+00:00
+              </h6>
+              <h5>
+                Vancouver, WA 
+              </h5>
+            </article>
+          </a>
+        </li>
+      </ul>
+    </section>
+  </main>
+</div>
+`;

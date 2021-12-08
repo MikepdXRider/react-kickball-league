@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`renders PlayersList 1`] = `
+exports[`renders PlayersList component 1`] = `
 <div>
   <ul>
     <li>

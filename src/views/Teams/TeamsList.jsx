@@ -12,7 +12,7 @@ export default function TeamsList() {
     useEffect(() => {
         async function getTeamsData(){
             const newTeamsDataArr = await getTeams();
-            console.log('getTeams fn returns :', newTeamsDataArr);
+            // console.log('getTeams fn returns :', newTeamsDataArr);
             setTeamsDataArr(newTeamsDataArr);
             setIsLoading(false);
         }

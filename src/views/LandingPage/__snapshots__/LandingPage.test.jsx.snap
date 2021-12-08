@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`renders PlayerCard 1`] = `
+exports[`renders PlayerCard page 1`] = `
 <div>
   <section>
     <h1>

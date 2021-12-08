@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`renders TeamCard 1`] = `
+exports[`renders TeamCard component 1`] = `
 <div>
   <article
     style="border: 1px solid black;"

@@ -12,7 +12,7 @@ const teamDataObj = {
     state: 'test-state'
 }
 
-it ('renders TeamCard', () => {
+it ('renders TeamCard component', () => {
     const { container } = render(<TeamCard teamDataObj={teamDataObj} /> )
     const teamName = screen.getByText(teamDataObj.name);
 
