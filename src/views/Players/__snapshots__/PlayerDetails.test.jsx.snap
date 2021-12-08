@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`renders PlayerDetils 1`] = `
+exports[`renders PlayerDetails page 1`] = `
 <div>
   <main>
     <article>

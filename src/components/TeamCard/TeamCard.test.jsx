@@ -7,7 +7,9 @@ const teamDataObj = {
     created_at: 'test-utc',
     id: 1,
     name: 'test-name',
-    team_id: 3
+    team_id: 3,
+    city: 'test-city',
+    state: 'test-state'
 }
 
 it ('renders TeamCard', () => {

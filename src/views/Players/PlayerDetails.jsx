@@ -7,19 +7,18 @@ import { getPlayerById } from '../../services/players.jsx';
 export default function PlayerDetails() {
     const { id } = useParams();
 
-    const [isLoading, setIsLoading] = useState(false);
+    const [isLoading, setIsLoading] = useState(true);
     const [playerDataObj, setPlayerDataObj] = useState({});
 
 
     useEffect(()=> {
-        setIsLoading(true);
         async function getPlayerData() {
             const newPlayerDataObj = await getPlayerById(id);
             setPlayerDataObj(newPlayerDataObj);
+            setIsLoading(false);
         }
 
         getPlayerData();
-        setIsLoading(false);
     }, [id])
 
 

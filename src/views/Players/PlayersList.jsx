@@ -13,7 +13,7 @@ export default function PlayersList() {
         setIsLoading(true);
         async function getPlayersData() {
             const newPlayersDataArr = await getPlayers();
-            console.log('getPlayers fn returns: ', newPlayersDataArr);
+            // console.log('getPlayers fn returns: ', newPlayersDataArr);
             setPlayersDataArr(newPlayersDataArr);
         }
 

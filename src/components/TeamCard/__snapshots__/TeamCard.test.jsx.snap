@@ -12,7 +12,7 @@ exports[`renders TeamCard 1`] = `
       test-utc
     </h6>
     <h5>
-      undefined, undefined 
+      test-city, test-state 
     </h5>
   </article>
 </div>

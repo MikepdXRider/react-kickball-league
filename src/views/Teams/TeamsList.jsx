@@ -6,19 +6,18 @@ import { getTeams } from '../../services/teams.jsx';
 export default function TeamsList() {
     // establish state hooks
     const [teamsDataArr, setTeamsDataArr] = useState([]);
-    const [isLoading, setIsLoading] = useState(false);
+    const [isLoading, setIsLoading] = useState(true);
 
     // use useEffect hooks to manage API requests.
     useEffect(() => {
-        setIsLoading(true);
         async function getTeamsData(){
             const newTeamsDataArr = await getTeams();
             console.log('getTeams fn returns :', newTeamsDataArr);
             setTeamsDataArr(newTeamsDataArr);
+            setIsLoading(false);
         }
 
         getTeamsData();
-        setIsLoading(false);
     }, [])
 
     return (
