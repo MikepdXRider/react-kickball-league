@@ -1,25 +1,32 @@
-import logo from './logo.svg';
 import './App.css';
+import { Route, Switch } from 'react-router';
+import { BrowserRouter, NavLink } from 'react-router-dom';
+import TeamDetails from './views/Teams/TeamDetails.jsx';
+import TeamsList from './views/Teams/TeamsList.jsx';
+import PlayerDetails from './views/Players/PlayerDetails.jsx';
+import PlayersList from './views/Players/PlayersList.jsx';
+import LandingPage from './views/LandingPage/LandingPage.jsx';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+  <BrowserRouter>
+      <div>
+        <nav>
+          <NavLink to='/'>Home</NavLink>
+          <NavLink to='/teams'>Teams</NavLink>
+          <NavLink to='/players'>Players</NavLink>
+        </nav>
+
+        <Switch>
+          <Route exact path="/teams" component={TeamsList} />
+          <Route exact path="/teams/:id" component={TeamDetails} />
+          <Route exact path="/players" component={PlayersList} />
+          <Route exact path="/players/:id" component={PlayerDetails}/>
+          <Route exact path="/" component={LandingPage}/>
+        </Switch>
+      </div>
+  </BrowserRouter>
+  )
 }
 
 export default App;

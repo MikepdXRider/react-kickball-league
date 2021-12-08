@@ -1,0 +1,16 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders PlayerCard page 1`] = `
+<div>
+  <section>
+    <h1>
+      Welcome to the kickball league!
+    </h1>
+    <a
+      href="/teams"
+    >
+      Teams List!
+    </a>
+  </section>
+</div>
+`;

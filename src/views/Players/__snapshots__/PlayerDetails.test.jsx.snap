@@ -1,0 +1,20 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders PlayerDetails page 1`] = `
+<div>
+  <main>
+    <article>
+      <h3>
+        Ben E. Jetts
+      </h3>
+      <h6>
+        2021-11-22T20:11:15+00:00
+      </h6>
+      <h5>
+        Position: 
+        Pitcher
+      </h5>
+    </article>
+  </main>
+</div>
+`;

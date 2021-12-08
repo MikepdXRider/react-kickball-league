@@ -1,0 +1,19 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders TeamCard component 1`] = `
+<div>
+  <article
+    style="border: 1px solid black;"
+  >
+    <h3>
+      test-name
+    </h3>
+    <h6>
+      test-utc
+    </h6>
+    <h5>
+      test-city, test-state 
+    </h5>
+  </article>
+</div>
+`;
