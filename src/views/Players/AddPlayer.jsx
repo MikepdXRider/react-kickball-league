@@ -17,7 +17,7 @@ export default function AddPlayer() {
     useEffect(() => {
         async function componentDidMount() {
             const newTeamDataArr = await getTeams();
-            console.log(newTeamDataArr);
+            // console.log(newTeamDataArr);
             setTeamDataArr(newTeamDataArr);
         }
         componentDidMount();
