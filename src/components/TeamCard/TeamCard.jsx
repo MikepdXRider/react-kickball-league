@@ -1,12 +1,13 @@
 import React from 'react'
 import PropTypes from 'prop-types';
+import changeTimeZone from '../../utils/change-timezone.js';
 
 
 export default function TeamCard({teamDataObj}) {
     return (
             <article>
                 <h3>{teamDataObj.name}</h3>
-                <h6>{teamDataObj.created_at}</h6>
+                <h6>Date Created: {changeTimeZone(teamDataObj.created_at)}</h6>
                 <h5>{`${teamDataObj.city}, ${teamDataObj.state} `}</h5>
             </article>
     )

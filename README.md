@@ -22,7 +22,7 @@ Making a Plan
 
 
 # Plan
-- A user can create a new team
+- ✔ A user can create a new team
     - Wireframe: N/A. createTeam Views component. TeamForm component(takes in optional team data, and a handleSubmit fn as props).
     - HTML: (TeamForm Component)Form as container, inputs as user inputs(some required), submit button/input, fieldset for cool form box, legend for cool form title.
     - State: useState hook for each user input. 
@@ -32,7 +32,7 @@ Making a Plan
     - Validation: Test behavior via console.log and mocking the service using MSW(Mock Service Worker).
     - Data model: ```{ Name, City, State }```
     - Features that rely on features: None. 
-- A user can select a team from the list view and update them
+- ✔ A user can select a team from the list view and update them
     - Wireframe: N/A. TeamDetails Views. TeamForm component(takes in optional team data, and a handleSubmit fn as props)
     - HTML: (Reuse TeamForm Component) Form as container, inputs as user inputs(some required), submit button/input, fieldset for cool form box, legend for cool form title.
     - State: useState hook for each user input. 
@@ -43,7 +43,7 @@ Making a Plan
     - Validation: Test behavior via console.log and mocking the service using MSW(Mock Service Worker).
     - Data model: ```{ Name, City, State }```
     - Features that rely on features: None. 
-- A user can select a team from the list view and delete them
+- ✔ A user can select a team from the list view and delete them
     - Wireframe: N/A. TeamDetails Views. 
     - HTML: Button for deleting team.
     - State: N/A.
@@ -62,3 +62,5 @@ Making a Plan
 - Each view & component has an associated test
     - Heck'n heck yeah, sister! 
 
+## Additional functionality:
+- Form validation -> Which inputs should be required and not? 

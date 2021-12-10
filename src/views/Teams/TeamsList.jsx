@@ -1,9 +1,13 @@
 import React, { useEffect, useState } from 'react'
-import { Link } from 'react-router-dom';
+import { Link, useHistory } from 'react-router-dom';
 import TeamCard from '../../components/TeamCard/TeamCard.jsx';
 import { getTeams } from '../../services/teams.js';
 
+
+
 export default function TeamsList() {
+    const history = useHistory();
+    
     // establish state hooks
     const [teamsDataArr, setTeamsDataArr] = useState([]);
     const [isLoading, setIsLoading] = useState(true);
@@ -20,12 +24,16 @@ export default function TeamsList() {
         getTeamsData();
     }, [])
 
+    // 🌟 Potential alternative the isLoading ternary. 
+    // if (isLoading) return <h1>Loading...</h1>
+
     return (
         <main>
             {
                 isLoading
                 ? <h1>Loading...</h1> 
                 : <section>
+                    <button onClick={() => history.push('teams/add')}>Add team</button>
                     <ul>
                         {teamsDataArr.map(teamDataObj => {
                             return (
