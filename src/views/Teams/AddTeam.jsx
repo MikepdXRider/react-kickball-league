@@ -11,13 +11,11 @@ export default function AddTeam() {
     const [teamCityStr, setTeamCityStr] = useState('');
     const [teamStateStr, setTeamStateStr] = useState('');
 
-    
     const handleSubmit = async (e) => {
         e.preventDefault();
         const response = await createTeam({name: teamNameStr, city: teamCityStr,  state: teamStateStr});
-        history.push(`/teams/${response[0].id}`)
+        history.push(`/teams/${response[0].id}`);
     }
-
 
     return (
         <TeamForm 

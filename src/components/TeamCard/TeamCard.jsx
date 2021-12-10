@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 
 export default function TeamCard({teamDataObj}) {
     return (
-            <article style={{border: '1px solid black'}}>
+            <article>
                 <h3>{teamDataObj.name}</h3>
                 <h6>{teamDataObj.created_at}</h6>
                 <h5>{`${teamDataObj.city}, ${teamDataObj.state} `}</h5>
