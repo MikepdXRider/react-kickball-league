@@ -2,7 +2,7 @@ import React from 'react'
 import { useParams } from 'react-router'
 import { useEffect, useState } from 'react/cjs/react.development';
 import PlayerCard from '../../components/PlayerCard/PlayerCard.jsx';
-import { getPlayerById } from '../../services/players.jsx';
+import { getPlayerById } from '../../services/players.js';
 
 export default function PlayerDetails() {
     const { id } = useParams();

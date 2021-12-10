@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom';
 import TeamCard from '../../components/TeamCard/TeamCard.jsx';
-import { getTeams } from '../../services/teams.jsx';
+import { getTeams } from '../../services/teams.js';
 
 export default function TeamsList() {
     // establish state hooks

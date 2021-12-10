@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { useEffect, useState } from 'react/cjs/react.development';
 import PlayerCard from '../../components/PlayerCard/PlayerCard.jsx';
-import { getPlayers } from '../../services/players.jsx';
+import { getPlayers } from '../../services/players.js';
 
 export default function PlayersList() {
     

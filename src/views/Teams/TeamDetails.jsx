@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react'
 import { useParams } from 'react-router';
 import PlayersList from '../../components/PlayersList/PlayersList.jsx';
 import TeamCard from '../../components/TeamCard/TeamCard.jsx';
-import { getTeamById } from '../../services/teams.jsx';
+import { getTeamById } from '../../services/teams.js';
 
 export default function TeamDetails() {
     const { id } = useParams();
