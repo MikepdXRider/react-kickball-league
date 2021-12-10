@@ -1,20 +1,17 @@
 import React from 'react'
-import { useParams } from 'react-router'
+import { useHistory, useParams } from 'react-router'
 import { useEffect, useState } from 'react/cjs/react.development';
 import PlayerCard from '../../components/PlayerCard/PlayerCard.jsx';
 import PlayerForm from '../../components/PlayerForm/PlayerForm.jsx';
-import { getPlayerById, updatePlayerById } from '../../services/players.js';
+import { deletePlayerById, getPlayerById, updatePlayerById } from '../../services/players.js';
 
 export default function PlayerDetails() {
     const { id } = useParams();
 
-    // for delete functionality.
-    // const history = useHistory();
+    const history = useHistory();
 
     const [playerNameStr, setPlayerNameStr] = useState('');
     const [playerPositionStr, setPlayerPositionStr] = useState('');
-    // could be used in addplayer views.
-    // const [playerTeamIdNum, setPlayerTeamIdNum] = useState(0);
     const [playerDataObj, setPlayerDataObj] = useState({});
     const [isLoading, setIsLoading] = useState(true);
     const [editSwitch, setEditSwitch] = useState(false);
@@ -47,6 +44,22 @@ export default function PlayerDetails() {
         setEditSwitch(prevState => !prevState);
     }
 
+    async function deletePlayer(){
+        // eslint-disable-next-line no-restricted-globals
+        const isExecuted = confirm(`Are you sure you want to delete ${playerNameStr}? This can be permanent.`);
+
+        if (isExecuted) {
+            try{
+                await deletePlayerById(id);
+                return history.push('/teams');
+            } catch(err) {
+                console.log(err);
+            }
+        } else {
+            return;
+        }
+    }
+
     // 🌟 Potential alternative the isLoading ternary. 
     // if (isLoading) return <h1>Loading...</h1>
 
@@ -61,6 +74,7 @@ export default function PlayerDetails() {
                         ? <article>
                             <PlayerCard playerDataObj={playerDataObj} />
                             <button onClick={() => setEditSwitch(prevState => !prevState)}>Edit Player</button>
+                            <button onClick={() => deletePlayer()}>Delete Player</button>
                         </article>
                         : <PlayerForm 
                             edit={true}

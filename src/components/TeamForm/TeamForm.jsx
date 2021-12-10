@@ -5,6 +5,7 @@ export default function TeamForm({edit = false, teamNameStr, setTeamNameStr, tea
         <form onSubmit={(e) => submitFn(e)}>
             <fieldset>
                 <legend>{edit ? 'Edit Team' : 'Add Team'}</legend>
+                
                 <label htmlFor="name">Name: </label>
                 <input type="text" id="name" value={teamNameStr} onChange={(e) => setTeamNameStr(e.target.value)} name="team-name"/>
 

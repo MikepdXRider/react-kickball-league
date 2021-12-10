@@ -55,12 +55,13 @@ Making a Plan
     - Features that rely on other features: N/A.
 - A user can create a new player
     - A version of the teamsComponent and plan. 
-- A user can select a player from the list view and update them
+- ✔ A user can select a player from the list view and update them
     - A version of the teamsComponent and plan. 
-- A user can select a player from the list view and delete them
+- ✔ A user can select a player from the list view and delete them
     - A version of the teamsComponent and plan. 
 - Each view & component has an associated test
     - Heck'n heck yeah, sister! 
 
 ## Additional functionality:
-- Form validation -> Which inputs should be required and not? 
+- Form validation -> Which input tags should be required and not? 
+- PropTypes validation -> Which props/params should be required and not? 

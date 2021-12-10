@@ -7,6 +7,7 @@ import PlayerDetails from './views/Players/PlayerDetails.jsx';
 import PlayersList from './views/Players/PlayersList.jsx';
 import LandingPage from './views/LandingPage/LandingPage.jsx';
 import AddTeam from './views/Teams/AddTeam.jsx';
+import AddPlayer from './views/Players/AddPlayer.jsx';
 
 function App() {
   return (
@@ -24,6 +25,7 @@ function App() {
           <Route exact path="/teams/add" component={AddTeam} />
           <Route exact path="/teams/:id" component={TeamDetails} />
           <Route exact path="/players" component={PlayersList} />
+          <Route exact path="/players/add" component={AddPlayer} />
           <Route exact path="/players/:id" component={PlayerDetails}/>
           <Route exact path="/" component={LandingPage}/>
         </Switch>

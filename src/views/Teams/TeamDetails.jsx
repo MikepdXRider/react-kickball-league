@@ -49,7 +49,7 @@ export default function TeamDetails() {
 
     async function deleteTeam(){
         // eslint-disable-next-line no-restricted-globals
-        const isExecuted = confirm(`Are you sure you want to delete ${teamNameStr}? This can be permanent`);
+        const isExecuted = confirm(`Are you sure you want to delete ${teamNameStr}? This can be permanent.`);
 
         if (isExecuted) {
             try{
