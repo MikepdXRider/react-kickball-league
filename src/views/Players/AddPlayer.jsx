@@ -10,7 +10,7 @@ export default function AddPlayer() {
 
     const [playerNameStr, setPlayerNameStr] = useState('');
     const [playerPositionStr, setPlayerPositionStr] = useState('');
-    const [playerTeamIdNum, setPlayerTeamIdNum] = useState(0);
+    const [playerTeamIdNum, setPlayerTeamIdNum] = useState('');
     const [teamDataArr, setTeamDataArr] = useState([]);
 
 
@@ -26,11 +26,11 @@ export default function AddPlayer() {
 
     const handleSubmit = async (e) => {
         e.preventDefault();
-        // 🟢 Get this working! When the user has not selected a valid team, do not make the createPlayer request.
-        // if (playerTeamIdNum === '0'){
-        //     prompt('Please assign player to a team.');
-        //     return;
-        // }
+        if (!playerTeamIdNum){
+            alert('Please assign player to a team.');
+            return;
+        }
+        // console.log(typeof playerTeamIdNum)
         const response = await createPlayer({name: playerNameStr, position: playerPositionStr,  teamId: playerTeamIdNum});
         history.push(`/players/${response[0].id}`);
     }
