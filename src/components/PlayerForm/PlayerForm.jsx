@@ -17,7 +17,7 @@ export default function PlayerForm({edit = false, playerNameStr, setPlayerNameSt
                     && <>
                         <label htmlFor="team">Team: </label>
                         <select value={playerTeamIdNum} onChange={(e) => setPlayerTeamIdNum(e.target.value)} name="teams" id="team" required>
-                        <option value={0}>-</option>
+                        <option value=''>-</option>
                         {teamDataArr.map(teamsDataObj => <option key={teamsDataObj.id} name={teamsDataObj.name} value={teamsDataObj.id}>{teamsDataObj.name}</option>)}
                         </select>
                     </>

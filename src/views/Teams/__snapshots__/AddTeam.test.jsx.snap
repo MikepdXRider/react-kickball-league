@@ -1,0 +1,52 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders AddTeam page 1`] = `
+<div>
+  <form>
+    <fieldset>
+      <legend>
+        Add Team
+      </legend>
+      <label
+        for="name"
+      >
+        Name: 
+      </label>
+      <input
+        id="name"
+        name="team-name"
+        required=""
+        type="text"
+        value=""
+      />
+      <label
+        for="city"
+      >
+        City: 
+      </label>
+      <input
+        id="city"
+        name="team-city"
+        required=""
+        type="text"
+        value=""
+      />
+      <label
+        for="state"
+      >
+        State: 
+      </label>
+      <input
+        id="state"
+        name="team-state"
+        required=""
+        type="text"
+        value=""
+      />
+      <input
+        type="submit"
+      />
+    </fieldset>
+  </form>
+</div>
+`;

@@ -11,7 +11,7 @@ it ('renders PlayersList page', async () => {
             </MemoryRouter>
         )
     // count nest line 14 in waitFor() - maybe. 
-    const playerName = await screen.findByText('Ben E. Jetts');
+    const playerName = await screen.findByText(/Add Player/i);
 
     expect(playerName).toBeInTheDocument();
     expect(container).toMatchSnapshot();

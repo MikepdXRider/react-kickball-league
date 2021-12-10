@@ -7,7 +7,8 @@ exports[`renders PlayerCard component 1`] = `
       test-name
     </h3>
     <h6>
-      test-utc
+      Date Created: 
+      Invalid Date
     </h6>
     <h5>
       Position: 

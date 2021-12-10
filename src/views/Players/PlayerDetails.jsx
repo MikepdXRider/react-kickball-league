@@ -51,7 +51,7 @@ export default function PlayerDetails() {
         if (isExecuted) {
             try{
                 await deletePlayerById(id);
-                return history.push('/teams');
+                return history.push('/players');
             } catch(err) {
                 console.log(err);
             }

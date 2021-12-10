@@ -11,7 +11,7 @@ it ('renders TeamsList page', async () => {
             </MemoryRouter>
         )
     // count nest line 14 in waitFor() - maybe. 
-    const teamName = await screen.findByText('Acme USA');
+    const teamName = await screen.findByText(/Add Team/i);
 
     expect(teamName).toBeInTheDocument();
     expect(container).toMatchSnapshot();

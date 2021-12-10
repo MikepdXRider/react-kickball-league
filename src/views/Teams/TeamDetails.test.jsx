@@ -12,7 +12,7 @@ it ('renders TeamDetails page', async () => {
         </Route>
     </MemoryRouter>
     )
-    const teamName = await screen.findByText(/Ben E. Jetts/i);
+    const teamName = await screen.findByText(/Loading/i);
 
     expect(teamName).toBeInTheDocument();
     expect(container).toMatchSnapshot();

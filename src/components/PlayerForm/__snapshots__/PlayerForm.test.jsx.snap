@@ -1,0 +1,62 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders PlayerForm component 1`] = `
+<div>
+  <form>
+    <fieldset>
+      <legend>
+        Add Player
+      </legend>
+      <label
+        for="name"
+      >
+        Name: 
+      </label>
+      <input
+        id="name"
+        name="Player-name"
+        required=""
+        type="text"
+        value="test-name"
+      />
+      <label
+        for="position"
+      >
+        Position: 
+      </label>
+      <input
+        id="position"
+        name="Player-city"
+        required=""
+        type="text"
+        value="test-state"
+      />
+      <label
+        for="team"
+      >
+        Team: 
+      </label>
+      <select
+        id="team"
+        name="teams"
+        required=""
+      >
+        <option
+          value=""
+        >
+          -
+        </option>
+        <option
+          name="test-team"
+          value="1"
+        >
+          test-team
+        </option>
+      </select>
+      <input
+        type="submit"
+      />
+    </fieldset>
+  </form>
+</div>
+`;
