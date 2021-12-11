@@ -4,7 +4,7 @@ export default function TeamForm({edit = false, teamNameStr, setTeamNameStr, tea
     return (
         <form onSubmit={(e) => submitFn(e)}>
             <fieldset>
-                <legend>{edit ? 'Edit Team' : 'Add Team'}</legend>
+                <legend>{edit ? 'Edit Team' : 'Add New Team'}</legend>
 
                 <label htmlFor="name">Name: </label>
                 <input type="text" id="name" value={teamNameStr} onChange={(e) => setTeamNameStr(e.target.value)} name="team-name" required/>
@@ -15,7 +15,8 @@ export default function TeamForm({edit = false, teamNameStr, setTeamNameStr, tea
                 <label htmlFor="state">State: </label>
                 <input type="text" id="state" value={teamStateStr} onChange={(e) => setTeamStateStr(e.target.value)} name='team-state' required/>
 
-                <input type="submit" />
+                {/* <input type="submit" /> */}
+                <button name='Add Team'>Add Team</button>
             </fieldset>
         </form>
     )

@@ -5,7 +5,7 @@ exports[`renders TeamForm component 1`] = `
   <form>
     <fieldset>
       <legend>
-        Add Team
+        Add New Team
       </legend>
       <label
         for="name"
@@ -43,9 +43,11 @@ exports[`renders TeamForm component 1`] = `
         type="text"
         value="test-state"
       />
-      <input
-        type="submit"
-      />
+      <button
+        name="Add Team"
+      >
+        Add Team
+      </button>
     </fieldset>
   </form>
 </div>
