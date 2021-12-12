@@ -4,7 +4,7 @@ export default function PlayerForm({edit = false, playerNameStr, setPlayerNameSt
     return (
         <form onSubmit={(e) => submitFn(e)}>
             <fieldset>
-                <legend>{edit ? 'Edit Player' : 'Add Player'}</legend>
+                <legend>{edit ? 'Edit Player' : 'Add New Player'}</legend>
 
                 <label htmlFor="name">Name: </label>
                 <input type="text" id="name" value={playerNameStr} onChange={(e) => setPlayerNameStr(e.target.value)} name="Player-name" required/>
@@ -23,7 +23,9 @@ export default function PlayerForm({edit = false, playerNameStr, setPlayerNameSt
                     </>
                 }
 
-                <input type="submit" />
+                {/* <input type="submit" /> */}
+                <button name='Add Player'>Add Player</button>
+
             </fieldset>
         </form>
     )

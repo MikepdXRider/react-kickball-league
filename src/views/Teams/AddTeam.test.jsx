@@ -67,6 +67,8 @@ it('should add a team and redirect to the team detail page', async () => {
   userEvent.type(cityField, 'Anytown');
   userEvent.type(stateField, 'US');
 //THIS IS THE ONLY LINE IN THIS BLOCK THAT ACTUALLY DOES SOMETHING MEANINGFUL!?
+// BUT.... Sarani and Katie WERE ABLE TO PASS THE TEST BY REMOVING JUST. THIS. LINE. 
   userEvent.click(submitBtn);
+
   await screen.findByText(/redirect me/i);
 });
