@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`renders TeamsList page 1`] = `
+exports[`renders TeamsList page w/ data from api 1`] = `
 <div>
   <main>
     <section>
@@ -10,18 +10,18 @@ exports[`renders TeamsList page 1`] = `
       <ul>
         <li>
           <a
-            href="/teams/1"
+            href="/teams/6"
           >
             <article>
               <h3>
-                Big Lebowski's League for Underprivileged Children
+                redirect me!
               </h3>
               <h6>
                 Date Created: 
                 12/8/2021
               </h6>
               <h5>
-                Milwaukie, Oreeegon 
+                okay, go 
               </h5>
             </article>
           </a>

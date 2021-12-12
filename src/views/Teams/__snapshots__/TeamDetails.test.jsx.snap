@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`renders TeamDetails page w/ data from api 1`] = `
+exports[`renders TeamDetails page 1`] = `
 <div>
   <main>
     <section>
@@ -9,14 +9,14 @@ exports[`renders TeamDetails page w/ data from api 1`] = `
       >
         <article>
           <h3>
-            redirect me!
+            Big Lebowski's League for Underprivileged Children
           </h3>
           <h6>
             Date Created: 
             12/8/2021
           </h6>
           <h5>
-            okay, go 
+            Washington, Oregon 
           </h5>
         </article>
         <button>
@@ -28,9 +28,27 @@ exports[`renders TeamDetails page w/ data from api 1`] = `
       </article>
     </section>
     <section>
-      <h1>
-        No player data to display
-      </h1>
+      <ul>
+        <li>
+          <a
+            href="/players/9"
+          >
+            <article>
+              <h3>
+                Joe Budden
+              </h3>
+              <h6>
+                Date Created: 
+                12/10/2021
+              </h6>
+              <h5>
+                Position: 
+                butthole
+              </h5>
+            </article>
+          </a>
+        </li>
+      </ul>
     </section>
   </main>
 </div>
