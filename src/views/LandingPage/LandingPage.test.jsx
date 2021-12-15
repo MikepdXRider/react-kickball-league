@@ -3,7 +3,7 @@ import { render } from "@testing-library/react";
 import { MemoryRouter } from "react-router";
 import LandingPage from "./LandingPage.jsx";
 
-it ('renders PlayerCard page', () => {
+it('renders PlayerCard page', () => {
     const { container } = render(
     <MemoryRouter>
         <LandingPage />

@@ -4,7 +4,7 @@ import { MemoryRouter, Route } from "react-router";
 import PlayerDetails from "./PlayerDetails.jsx";
 
 //need to mock out the server for this to work again. 
-it.skip('renders PlayerDetails page', async () => {
+it('renders PlayerDetails page', async () => {
     const { container } = render(
     <MemoryRouter initialEntries={[`/players/1`]}>  
         <Route path='/players/:id'>

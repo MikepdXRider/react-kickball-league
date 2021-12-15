@@ -13,10 +13,9 @@ export default function TeamDetails() {
     const [teamNameStr, setTeamNameStr] = useState('');
     const [teamCityStr, setTeamCityStr] = useState('');
     const [teamStateStr, setTeamStateStr] = useState('');
-    const [teamDataObj, setTeamDataObj] = useState({})
+    const [teamDataObj, setTeamDataObj] = useState({});
     const [isLoading, setIsLoading] = useState(true);
     const [editSwitch, setEditSwitch] = useState(false);
-
 
     // ❓ Is there a better way to approach this?
     async function fetchTeamData(id) {
@@ -28,7 +27,6 @@ export default function TeamDetails() {
         setTeamStateStr(newTeamDataObj.state);
         setIsLoading(false);
     }
-    
 
     // ❓ Is there a better way to approach this? I had to add the id as a param to fetchTeamData fn and then pass it as a dependency. If I feed it the fetchTeamData fn as a dependency, it creates an infinite loop. If I remove the array, it creates an infinite loop.
     useEffect(() => {
@@ -36,8 +34,7 @@ export default function TeamDetails() {
             await fetchTeamData(id);
         }
         componentDidMount();
-    }, [id])
-
+    }, [id]);
 
     async function handleSubmit(e) {
         e.preventDefault();
@@ -45,7 +42,6 @@ export default function TeamDetails() {
         await fetchTeamData(id);
         setEditSwitch(prevState => !prevState);
     }
-
 
     async function deleteTeam(){
         // eslint-disable-next-line no-restricted-globals

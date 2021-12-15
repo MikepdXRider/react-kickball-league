@@ -11,7 +11,7 @@ const playersDataArr = [{
     team_id: 3
 }]
 
-it.skip('renders PlayersList component', () => {
+it('renders PlayersList component', () => {
     const { container } = render(
     <MemoryRouter>
         <PlayersList playersDataArr={playersDataArr} /> 

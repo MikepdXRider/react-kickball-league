@@ -9,14 +9,14 @@ exports[`renders TeamDetails page 1`] = `
       >
         <article>
           <h3>
-            Big Lebowski's League for Underprivileged Children
+            redirect me!
           </h3>
           <h6>
             Date Created: 
             12/8/2021
           </h6>
           <h5>
-            Washington, Oregon 
+            okay, go 
           </h5>
         </article>
         <button>
@@ -28,27 +28,9 @@ exports[`renders TeamDetails page 1`] = `
       </article>
     </section>
     <section>
-      <ul>
-        <li>
-          <a
-            href="/players/9"
-          >
-            <article>
-              <h3>
-                Joe Budden
-              </h3>
-              <h6>
-                Date Created: 
-                12/10/2021
-              </h6>
-              <h5>
-                Position: 
-                butthole
-              </h5>
-            </article>
-          </a>
-        </li>
-      </ul>
+      <h1>
+        No player data to display
+      </h1>
     </section>
   </main>
 </div>

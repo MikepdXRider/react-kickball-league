@@ -35,6 +35,7 @@ beforeAll(() => {
 afterAll(() => {
     server.close();
 });
+
 it('renders TeamsList page w/ data from api', async () => {
     const { container } = render(
             <MemoryRouter>
